@@ -1,0 +1,18 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+.titulo {
+  text-align: center;
+}
+.centered-image {
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente la imagen */
+  width: 200px; /* Modifica el ancho de la imagen según tus preferencias */
+  height: 200px; /* Modifica la altura de la imagen según tus preferencias */
+}
+
+.centered-text {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 18px; /* Modifica el tamaño del texto según tus preferencias */
+}

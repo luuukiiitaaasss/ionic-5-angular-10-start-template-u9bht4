@@ -1,0 +1,17 @@
+/* Add application styles & imports to this file! */
+@import '~@ionic/angular/css/ionic.bundle.css';
+:root {
+  --ion-font-family: 'Noto Sans', sans-serif;
+}
+:root {
+  /*barra superior */
+  --ion-toolbar-background: #086519;
+  --ion-toolbar-color: #ffffff;
+  --ion-background-color: linear-gradient (180deg, #08ab2c 0%, #08ab2c 100%);
+  /*barra inferior */
+  --ion-tab-bar-background: #086519;
+  --ion-tab-bar-color: #ffffff;
+  --ion-tab-bar-color-selected: #ffffff;
+}
+
+  

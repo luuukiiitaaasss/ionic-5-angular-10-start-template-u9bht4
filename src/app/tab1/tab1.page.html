@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Bienvenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="image-container">
+    <img
+      src="https://i.pinimg.com/564x/f6/93/04/f69304dd11cabb1ed8869784a5a5343c.jpg"
+      alt="Imagen 1"
+      class="centered-image"
+    />
+    <p class="image-text centered-text">PROMO!!!</p>
+  </div>
+
+  <div class="image-container">
+    <img
+      src="https://www.bembos.com.pe/_ipx/q_85,s_500x500/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/a/base-papas-medinas.webp"
+      alt="Imagen 2"
+      class="centered-image"
+    />
+    <p class="image-text centered-text">2x1 APROVECHA!!!</p>
+  </div>
+
+  <div class="image-container">
+    <img
+      src="https://pbs.twimg.com/media/E9GzBRAWYAIyM1Q?format=jpg&name=small"
+      alt="Imagen 3"
+      class="centered-image"
+    />
+    <p class="image-text centered-text">
+      SOLO PARA USUARIOS QUE SE REGISTRAN!!
+    </p>
+  </div>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="share"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <!-- Icono de WhatsApp -->
+      <ion-fab-button color="whatsapp" (click)="openWhatsApp()">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </ion-fab-button>
+
+      <!-- Icono de Instagram -->
+      <ion-fab-button color="instagram" (click)="openInstagram()">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-fab-button>
+
+      <!-- Icono de Facebook -->
+      <ion-fab-button color="facebook" (click)="openFacebook()">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

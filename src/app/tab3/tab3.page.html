@@ -1,0 +1,109 @@
+<!-- tab3.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Ordene aquí</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let order of orders">
+      {{ order.name }} - {{ order.price }}
+    </ion-item>
+  </ion-list>
+  <script>
+    function ocultarMostrar() {
+      var formasPago = document.getElementsByClassName("extra-method");
+      Array.prototype.forEach.call(formasPago, function (formaPago) {
+        var str = formaPago.className;
+        var n = str.search("hidden");
+        console.log(n);
+        if (n > 0) {
+          formaPago.classList.remove("hidden");
+        } else {
+          formaPago.classList.add("hidden");
+        }
+      });
+    }
+  </script>
+  <link rel="stylesheet" href="https://pagar.pagopar.com/assets/css/pagopar.css">
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <a href="https://www.visa.com.py/" target="_blank">
+          <img title="Pagá con VISA a través de Pagopar" alt="Cobrar con Tarjeta de Crédito Visa en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/visa.png">
+        </a>
+      </ion-item>
+      <ion-item>
+        <a href="https://latam.mastercard.com/" target="_blank">
+          <img title="Pagá con Mastercard a través de Pagopar" alt="Cobrar con Tarjeta de Crédito Mastercard en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/mastercard.png">
+        </a>
+      </ion-item>
+      <ion-item>
+        <a href="https://www.americanexpress.com/" target="_blank">
+          <img title="Pagá con American Express a través de Pagopar" alt="Cobrar con Tarjeta de Crédito American Express en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/aex.png">
+        </a>
+      </ion-item>
+      <!-- Agregar más imágenes aquí -->
+      <ion-item>
+        <a href="" target="_blank">
+          <img title="Paga con Pago Express a través de Pagopar" alt="Cobrar con Pago Express en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/pagoexpress.png">
+        </a>
+      </ion-item>
+      <ion-item>
+        <a href="URL_DE_AQUI_PAGO" target="_blank">
+          <img title="Paga con Aquí Pago a través de Pagopar" alt="Cobrar con Aquí Pago en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/aquipago.png">
+        </a>
+      </ion-item>
+      <ion-item>
+        <a href="https://cdn.pagopar.com/assets/images/extra/footer/light/practipago.png" target="_blank">
+          <img title="Paga con Practipago a través de Pagopar" alt="Cobrar con Practipago en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/practipago.png">
+        </a>
+      </ion-item>
+      <ion-item>
+        <a href="URL_DE_TIGO_MONEY" target="_blank">
+          <img title="Paga con Tigo Money a través de Pagopar" alt="Cobrar con Tigo Money en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/tigo-money.png">
+        </a>
+      </ion-item>
+      <ion-item>
+        <a href="URL_DE_BILLETERA_PERSONAL" target="_blank">
+          <img title="Paga con Billetera Personal a través de Pagopar" alt="Cobrar con Billetera Personal en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/billetera-personal.png">
+        </a>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <div class="light">
+    <div class="footerPagopar">
+      <div class="container">
+        <div class="pagopar-methods">
+          <ul class="list">
+            <!-- Aquí están las imágenes de Mastercard y American Express -->
+            <li class="method">
+              <img title="Pagá con Mastercard a través de Pagopar" alt="Cobrar con Tarjeta de Crédito Mastercard en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/mastercard.png">
+            </li>
+            <li class="method">
+              <img title="Pagá con American Express a través de Pagopar" alt="Cobrar con Tarjeta de Crédito American Express en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/aex.png">
+            </li>
+            <!-- Agregar más imágenes aquí -->
+            <li class="method">
+              <img title="Paga con Pago Express a través de Pagopar" alt="Cobrar con Pago Express en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/pagoexpress.png">
+            </li>
+            <li class="method">
+              <img title="Paga con Aquí Pago a través de Pagopar" alt="Cobrar con Aquí Pago en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/aquipago.png">
+            </li>
+            <li class="method">
+              <img title="Paga con Practipago a través de Pagopar" alt="Cobrar con Practipago en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/practipago.png">
+            </li>
+            <li class="method">
+              <img title="Paga con Tigo Money a través de Pagopar" alt="Cobrar con Tigo Money en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/tigo-money.png">
+            </li>
+            <li class="method">
+              <img title="Paga con Billetera Personal a través de Pagopar" alt="Cobrar con Billetera Personal en Paraguay - Pagopar" src="https://cdn.pagopar.com/assets/images/extra/footer/light/billetera-personal.png">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</ion-content>

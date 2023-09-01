@@ -1,0 +1,25 @@
+.titulo {
+  text-align: center;
+}
+.image-container {
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.image-text {
+  text-align: center; /* Centra el texto horizontalmente */
+}
+/* Estilo para el texto "food" (anteriormente "small-text") */
+.food {
+  font-size: 12px; /* Ajusta el tamaño del texto según tus preferencias */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 5px; /* Agrega un espacio entre el texto y el precio */
+}
+/* Cambia el fondo del botón a verde */
+.green-bg-button {
+  background-color: green !important;
+}
+
+/* Cambia el color del icono del carrito a blanco */
+.green-bg-button ion-icon {
+  color: white !important;
+}

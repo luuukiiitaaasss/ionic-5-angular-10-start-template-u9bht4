@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">Menú</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Primera fila con tres imágenes, texto y botones -->
+  <ion-row>
+    <ion-col size="4">
+      <div class="image-container">
+        <img
+          src="https://i.pinimg.com/564x/a2/f6/8f/a2f68f0de4ab53c99e0016b71929e588.jpg"
+          height="80"
+          width="80"
+        />
+        <p class="food">Hamburguesa Simple</p>
+        <p class="image-text">10.000Gs</p>
+        <ion-button class="add-to-cart" expand="full">Ordenar</ion-button>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="image-container">
+        <img
+          src="https://i.pinimg.com/564x/bc/87/47/bc8747d7870d25f0f8a9dc59fbab24cd.jpg"
+          height="80"
+          width="80"
+        />
+        <p class="food">Hamburguesa Doble Carne</p>
+        <p class="image-text">15.000Gs</p>
+        <ion-button class="add-to-cart" expand="full">Ordenar</ion-button>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="image-container">
+        <img
+          src="https://i.pinimg.com/564x/31/a8/8d/31a88d6dfe1c900d6bc7a27930912797.jpg"
+          height="80"
+          width="80"
+        />
+        <p class="food">Hamburguesa Triple Carne</p>
+        <p class="image-text">20.000Gs</p>
+        <ion-button class="add-to-cart" expand="full">Ordenar</ion-button>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <!-- Segunda fila con tres imágenes, texto y botones -->
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="4">
+      <div class="image-container">
+        <img
+          src="https://i.pinimg.com/564x/ab/65/d3/ab65d3eb5c675add39b417b6473f3fd3.jpg"
+          height="80"
+          width="80"
+        />
+        <p class="food">Papas Fritas</p>
+        <p class="image-text">10.000 Gs</p>
+        <ion-button class="add-to-cart" expand="full" (click)="addToOrder()">Ordenar</ion-button>
+
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="image-container">
+        <img
+          src="https://i.pinimg.com/564x/46/3b/0a/463b0a0efffcbf5731a5913a7c3dc171.jpg"
+          height="80"
+          width="80"
+        />
+        <p class="food">Con Bacon y Cheddar</p>
+        <p class="image-text">18.000Gs</p>
+        <ion-button class="add-to-cart" expand="full" (click)="addToOrder()">Ordenar</ion-button>
+
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="image-container">
+        <img
+          src="https://i.pinimg.com/564x/51/4f/97/514f9797124fa4e57db9808d82aadbce.jpg"
+          height="80"
+          width="80"
+        />
+        <p class="food">Salchipapa</p>
+        <p class="image-text">22.000Gs</p>
+        <ion-button class="add-to-cart" expand="full">Ordenar</ion-button>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>                                                                                                                                                                             
